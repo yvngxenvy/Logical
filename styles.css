@@ -142,3 +142,60 @@ body {
     font-size: 17px;
     margin-left: 10px;
 }
+
+.video-preview {
+    padding: 5px;
+    padding-right: 0;
+    display: inline-block;
+    text-align: left;
+
+    transition: background-color 0.15s;
+}
+
+.video-preview:hover {
+    cursor: pointer;
+    background-color: #494949;
+}
+
+.video-preview:active {
+    cursor: pointer;
+    background-color: #0a0a0a;
+}
+
+.video-avatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.video-thumbnail {
+    border-radius: 10px;
+    display: block;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.video-details {
+    display: flex;
+}
+
+.video-title {
+    color: white;
+    display: block;
+    width: 350px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.video-author {
+    margin-bottom: 3px;
+}
+
+.video-stats {
+    margin-left: 54px;
+    color: #aaa;
+    font-size: 14px;
+}
