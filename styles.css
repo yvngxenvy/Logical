@@ -149,7 +149,7 @@ body {
     display: inline-block;
     text-align: left;
 
-    transition: background-color 0.15s;
+    transition: background-color 0.1s;
 }
 
 .video-preview:hover {
