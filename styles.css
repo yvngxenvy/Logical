@@ -12,7 +12,7 @@ body {
 }
 
 .watermark-main {
-    color: rgb(35, 149, 255);
+    color: #ac59c6;
     font-weight: bold;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .tab-bar button.active {
-    color: white;
+    color: #ac59c6;
 }
 
 .tab-content {
@@ -79,8 +79,8 @@ body {
     height: 70px;
     font-size: 17px;
     border-radius: 13px;
-    border-color: rgb(35, 149, 255);;
-    color: rgb(35, 149, 255);
+    border-color: #ac59c6;
+    color: #ac59c6;
     border-style: solid;
 
     transition: background-color 0.3s,
@@ -91,7 +91,7 @@ body {
 .download:hover {
     cursor: pointer;
     color: white;
-    background-color: rgb(35, 149, 255)
+    background-color: #ac59c6
 }
 
 .download:active {
