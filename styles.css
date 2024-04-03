@@ -199,3 +199,26 @@ body {
     color: #aaa;
     font-size: 14px;
 }
+
+.previews {
+    display: block;
+}
+
+.preview {
+    height: 250px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+    transition: opacity 0.15s,
+    height 0.18s;
+}
+
+.preview:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    height: 355px;
+}
+
+.preview:active {
+    opacity: 0.4;
+}

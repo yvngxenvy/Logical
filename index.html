@@ -25,6 +25,7 @@
         <div class="tab-buttons">
             <button id="home" class="tab-button" onclick="openTab(event, 'Tab1')">Home</button>
             <button class="tab-button" onclick="openTab(event, 'Tab3')">Showcase</button>
+            <button class="tab-button" onclick="openTab(event, 'Tab4')">Previews</button>
             <button class="tab-button" onclick="openTab(event, 'Tab2')">Plugins</button>
         </div>
     </div>
@@ -51,6 +52,32 @@
         </div>
         <div class="header-content">
             
+        </div>
+    </div>
+    <div id="Tab4" class="tab-content">
+        <div class="header">
+            <p>Logical Previews</p>
+        </div>
+        <div class="header-content">
+            <div class="previews">
+                <!--<a href="assets/previews/console.png"><img src="assets/previews/console.png" class="preview"></a>-->
+                <script>
+                    // JavaScript
+                    var tabsContainer = document.querySelector('.previews');
+                
+                    for (var i = 1; i <= 10; i++) {
+                        var tabLink = document.createElement('a');
+                        tabLink.href = 'assets/previews/tab' + i + '.png';
+                
+                        var tabImage = document.createElement('img');
+                        tabImage.src = 'assets/previews/tab' + i + '.png';
+                        tabImage.classList.add('preview');
+                
+                        tabLink.appendChild(tabImage);
+                        tabsContainer.appendChild(tabLink);
+                    }
+                </script>
+            </div>
         </div>
     </div>
     <div id="Tab3" class="tab-content">
