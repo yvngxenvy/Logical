@@ -88,6 +88,44 @@ body {
     opacity 0.15s;
 }
 
+.rules {
+    outline: #ffffff solid 2px;
+    color: #ffffff;
+    background-color: #111111;
+    height: 250px;
+    width: 500px;
+    display: flex;
+    flex-direction: column; /* Make children stack vertically */
+    margin: 30px auto; /* Centers the entire element horizontally on the page */
+}
+
+.rules-header {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.rules-content {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 19px;
+}
+
+.rules-content p {
+    margin: 0; /* Removes default paragraph margin */
+    position: relative; /* Required for pseudo-element positioning */
+    padding-left: 35px; /* Adds space for the open bullet */
+}
+
+.rules-content p::before {
+    content: "○"; /* Unicode character for an open bullet point */
+    color: #ffffff; /* Matches text color */
+    position: absolute;
+    left: 10px; /* Positions the open bullet at the beginning of the line */
+}
+
+
 .download:hover {
     cursor: pointer;
     color: white;
