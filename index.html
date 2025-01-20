@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQN5T4YWHN"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+     
+       gtag('config', 'G-EQN5T4YWHN');
+     </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Logical">
+    <meta property="og:description" content="The best Rocket League mod for you!">
+    <meta property="og:image" content="https://logicalrl.com/assets/LogicalPurple.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/x-icon" href="assets/LogicalPurple.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Logical | Home</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/76155aeaae.js" crossorigin="anonymous"></script>
+
+    <!-- Header (dont change) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").prepend($('<div>').load("assets/header.html"));
+        });
+    </script>
+
+    <div class="main-body">
+        <!-- Content start -->
+
+        <div class="home">
+            <h1>Logical, the best Rocket League mod</h1>
+            <p>Logical is a Rocket League mod that adds a lot of features to the game. There is both free and paid version of this mod, with constant updates to both. Logical is the best mod for Rocket League, and it is used by thousands of players around the world. Download Logical now and take your Rocket League experience to the next level!</p>
+            <a href="downloads.html">
+                <button class="download-btn">
+                    <i class="fa-solid fa-download"></i>
+
+                    Download</button>
+            </a>
+            <p id="download-notice">Over <counter target="10000"></counter> downloads!</p>
+
+            <script src="assets/counter.js"></script>
+        </div>
+
+        <!-- Content end -->
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="assets/background.js"></script>
+</body>
+</html>

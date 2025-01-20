@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQN5T4YWHN"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+     
+       gtag('config', 'G-EQN5T4YWHN');
+     </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Logical">
+    <meta property="og:description" content="The best Rocket League mod for you!">
+    <meta property="og:image" content="https://logicalrl.com/assets/LogicalPurple.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/x-icon" href="assets/LogicalPurple.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Logical | Downloads</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/76155aeaae.js" crossorigin="anonymous"></script>
+
+    <!-- Header (dont change) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").prepend($('<div>').load("assets/header.html"));
+        });
+    </script>
+
+    <div class="main-body">
+        <!-- Content start -->
+
+        <div class="premium">
+            <h1>Pick your download!</h1>
+            <p>Premium allows you to access every feature in the Logical mod! It is accompanied by 24/7 support, constant updates, and a community of other fellow premium users!</p>
+
+            <div class="subscriptions">
+                <div class="premium-info">
+                    <h1>Basic</h1>
+                    <div class="prices">
+                        <h2 id="free-price">Free!</h2>
+                    </div>
+    
+                    <ul>
+                        <li>Completely safe! (No ban)</li>
+                        <li>Very limited Features</li>
+                        <li>Completely free, no ads!</li>
+                        <li>Massive community (4k+ members!)</li>
+                        <li>Frequent support</li>
+                    </ul>
+    
+                    <a href="javascript:void()" id="download-link">
+                        <button class="premium-btn">
+                            <i class="fa-solid fa-download"></i>
+    
+                            Download Now!
+                        </button>
+                    </a>
+
+                    <script src="assets/fetchdownload.js"></script>
+    
+                    <p id="download-notice">Over <counter target="5000"></counter> free users!</p>    
+                </div>
+                <div class="premium-info">
+                    <h1>Premium</h1>
+                    <div class="prices">
+                        <h2 id="old-price">$24.99</h2>
+                        <h2 id="premium-price">$19.99</h2>
+                    </div>
+    
+                    <ul>
+                        <li>Many more amazing features!</li>
+                        <li>Priority Support by official developers!</li>
+                        <li>Lifetime access. One time payment!</li>
+                        <li>Fast and easy delievery!</li>
+                    </ul>
+    
+                    <a href="https://discord.gg/BJRjwfaanv">
+                        <button class="premium-btn">
+                            <i class="fa-brands fa-discord"></i>
+    
+                            Purchase Now
+                        </button>
+                    </a>
+    
+                    <p id="download-notice">Over <counter target="400"></counter> premium users!</p>
+                </div>
+
+                <script src="assets/counter.js"></script>
+            </div>
+
+            <div class="premium-box"></div>
+        </div>
+
+        <!-- Content end -->
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="assets/background.js"></script>
+</body>
+</html>

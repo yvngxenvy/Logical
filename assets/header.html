@@ -1,0 +1,28 @@
+<div class="header">
+    <div class="header-left">
+        <p class="header-left-text">Logical</p>
+    </div>
+    <div class="tabbar">
+        <a href="index.html" class="tab-btn">Home</a>
+        <a href="downloads.html" class="tab-btn">Downloads</a>
+        <a href="showcase.html" class="tab-btn">Showcase</a>
+        <a href="plugins.html" class="tab-btn">Plugins</a>
+        <a href="contest.html" class="tab-btn">Contest</a>
+    </div>
+    <div class="header-right">
+        <a href="https://discord.gg/BJRjwfaanv" class="header-right-icon">
+            <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="https://github.com/yvngxenvy/Logical" class="header-right-icon">
+            <i class="fa fa-github"></i>
+        </a>
+    </div>
+</div>
+
+<script>
+    $(".tab-btn").each(function() {
+        if (window.location.pathname == "/" + $(this).attr("href")) {
+            $(this).attr("id", "selected-tab");
+        }
+    });
+</script>
