@@ -3,7 +3,7 @@
         <p class="header-left-text">Logical</p>
     </div>
     <div class="tabbar">
-        <a href="index" class="tab-btn">Home</a>
+        <a href="" class="tab-btn">Home</a>
         <a href="community" class="tab-btn">Community</a>
         <a href="downloads" class="tab-btn">Downloads</a>
         <a href="showcase" class="tab-btn">Showcase</a>
@@ -22,15 +22,20 @@
 
 <script>
     $(".tab-btn").each(function() {
+        const originalHref = $(this).attr("href");
         let currentHref = $(this).attr("href");
 
         if (window.location.hostname == "127.0.0.1") {
-            $(this).attr("href", currentHref + ".html");
+            if (currentHref == "") {
+                currentHref = "index";
+            }
 
             currentHref = currentHref + ".html";
+
+            $(this).attr("href", currentHref);
         }
 
-        if (window.location.pathname == "/" + currentHref) {
+        if (window.location.pathname == "/" + currentHref || window.location.pathname == "/" + originalHref) {
             $(this).attr("id", "selected-tab");
         }
     });
